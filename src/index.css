@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* === COMPONENTE CUSTOM === */
+@layer components {
+  .nav-button {
+    @apply px-3 py-1.5 text-sm font-medium rounded-md transition-all duration-300;
+    @apply bg-transparent text-[hsl(var(--nav-text))] hover:bg-[hsl(var(--primary))] hover:text-white;
+  }
+}
+
+/* === VARIABILE CSS PENTRU LIGHT / DARK === */
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* alb */
+    --foreground: 220 13% 18%; /* aproape negru */
+    --navbar: 0 0% 96%; /* gri foarte deschis pentru navbar */
+    --nav-text: 220 13% 18%; /* text aproape negru */
+    --link-hover: 357 68% 37%; /* grena/roșu burgundy */
+    --primary: 14 80% 35%; /* roșu burgundy */
+    --primary-foreground: 0 0% 100%; /* alb */
+    --card-bg: #f3f4f6;
+  }
+  .dark {
+    --background: 220 13% 11%; /* aproape negru */
+    --foreground: 0 0% 100%; /* alb */
+    --navbar: 220 13% 15%; /* gri foarte închis */
+    --nav-text: 0 0% 100%;
+    --link-hover: 14 80% 35%;
+    --primary: 14 80% 35%;
+    --primary-foreground: 0 0% 100%;
+    --card-bg: 220 13% 15%;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))] transition-colors duration-300;
+  }
+}
