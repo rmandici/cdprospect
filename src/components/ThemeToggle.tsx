@@ -18,7 +18,7 @@ export const ThemeToggle = () => {
       }
     } else {
       // fallback la dark mode implicit
-      document.documentElement.classList.add("dark");
+      document.documentElement.classList.add("light");
       setIsDarkMode(true);
       localStorage.setItem("theme", "dark");
     }
