@@ -1,17 +1,38 @@
-import { useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
-  "Accueil",
-  "Descriptif",
-  "Produits",
-  "Liste des Activités",
-  "Acheter",
-  "Juridique",
+  { name: "Accueil", href: "/" },
+  { name: "Descriptif", href: "/Descriptif" },
+  { name: "Produits", href: "/Produits" },
+  { name: "Liste des Activités", href: "/Activites" },
+  { name: "Acheter", href: "/Acheter" },
+  { name: "Juridique", href: "/Juridique" },
 ];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setMenuOpen(false);
+      }
+    }
+
+    if (menuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuOpen]);
 
   return (
     <header
@@ -46,7 +67,7 @@ export default function Navbar() {
         {/* Meniu mobil: buton hamburger */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="lg:hidden text-[hsl(var(--nav-text))] mt-12 bg-transparent/55"
+          className="lg:hidden text-[hsl(var(--nav-text))] mt-12"
         >
           {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
@@ -54,25 +75,41 @@ export default function Navbar() {
         {/* Meniu desktop */}
         <nav className="hidden lg:flex gap-2 flex-wrap justify-end">
           {links.map((link) => (
-            <a key={link} href="#" className="nav-button text-base">
-              {link}
-            </a>
+            <Link
+              key={link.name}
+              to={link.href}
+              className={`nav-button text-base ${
+                location.pathname === link.href
+                  ? "bg-[hsl(var(--primary))] text-white"
+                  : ""
+              }`}
+            >
+              {link.name}
+            </Link>
           ))}
         </nav>
       </div>
 
       {/* Meniu mobil */}
-      {menuOpen && (
-        <nav className="md:hidden px-4 pb-4 flex items-center justify-center">
-          <div className="flex flex-col gap-2 mt-2">
-            {links.map((link) => (
-              <a key={link} href="#" className="nav-button">
-                {link}
-              </a>
-            ))}
-          </div>
-        </nav>
-      )}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.nav
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="lg:hidden overflow-hidden px-4 pb-4 flex items-center justify-center"
+          >
+            <div ref={menuRef} className="flex flex-col gap-2 mt-2">
+              {links.map((link) => (
+                <Link key={link.name} to={link.href} className="nav-button">
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+          </motion.nav>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

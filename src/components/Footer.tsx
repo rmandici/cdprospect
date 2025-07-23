@@ -5,7 +5,7 @@ import creditCardAnimation from "@/assets/credit-card.json";
 export default function Footer() {
   return (
     <footer
-      className="w-full border-t border-[hsl(var(--link-hover))] shadow-inner"
+      className="w-full shadow-inner"
       style={{ backgroundColor: "hsl(var(--navbar))" }}
     >
       <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-6">

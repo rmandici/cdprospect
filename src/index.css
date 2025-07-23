@@ -18,7 +18,7 @@
     --link-hover: 357 68% 37%; /* grena/roșu burgundy */
     --primary: 14 80% 35%; /* roșu burgundy */
     --primary-foreground: 0 0% 100%; /* alb */
-    --card-bg: #f3f4f6;
+    --card-bg: 0 0% 100%;
   }
   .dark {
     --background: 220 13% 11%; /* aproape negru */
