@@ -13,10 +13,10 @@ export default function PageWrapper({
   return (
     <motion.div
       className="min-h-[80vh] pt-[80px]"
-      initial={{ opacity: 0.7, scale: 0.98 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0.7, scale: 0.98 }}
-      transition={{ duration: 0.25, ease: "easeOut" }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.1, ease: "easeInOut" }}
     >
       {children}
     </motion.div>

@@ -1,6 +1,7 @@
 // src/components/BodySection.tsx
 import { Mail, PhoneCall, Printer, Phone, Send } from "lucide-react";
 import ThemedImage from "@/components/ThemedImage";
+import { Link } from "react-router-dom";
 
 export default function BodySection() {
   return (
@@ -60,7 +61,11 @@ export default function BodySection() {
                 </span>
               </div>
 
-              <button className="mt-4 flex items-center gap-2 bg-[hsl(357,68%,37%)] text-white font-bold rounded-lg px-6 py-2 hover:bg-[hsl(357,68%,45%)] transition">
+              <Link
+                to="/produits"
+                className="mt-4 flex items-center gap-2 bg-[hsl(357,68%,37%)] text-white 
+                          font-bold rounded-lg px-6 py-2 hover:bg-[hsl(357,68%,45%)] transition"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -76,7 +81,7 @@ export default function BodySection() {
                   />
                 </svg>
                 Acheter maintenant
-              </button>
+              </Link>
 
               <div className="text-xs text-muted-foreground mt-2 opacity-70">
                 Mise à jour 3 fois par an. Sans engagement.

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ArrowRight, ChevronDown, ChevronUp } from "lucide-react";
 
 const products = [
   {
@@ -164,12 +165,12 @@ function Card({
         {title}
       </h2>
 
-      <p className="text-sm text-[hsl(var(--foreground))] mb-2 text-center">
+      <p className="text-sm text-[hsl(var(--nav-text))] opacity-70 mb-2 text-center">
         {short}
       </p>
 
       {details.length > 0 && !showDetails && (
-        <div className="relative w-full h-[50px] mb-2 bg-[hsl(var(--navbar))] text-[hsl(var(--foreground))] text-sm rounded-md px-3 py-2 shadow-sm overflow-hidden flex items-center text-center justify-center">
+        <div className="relative w-full h-[50px] mb-4 bg-gradient-to-r from-[hsl(var(--navbar))] to-[hsl(var(--navbar)/0.7)] text-[hsl(var(--foreground))] text-sm font-semibold rounded-md px-4 py-2 shadow-sm overflow-hidden flex items-center justify-center">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentDetailIndex}
@@ -177,9 +178,14 @@ function Card({
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.4 }}
-              className="absolute"
+              className="flex items-center justify-center gap-2"
             >
-              {details[currentDetailIndex]}
+              <span className="flex items-center gap-2">
+                <ArrowRight className="min-w-4 min-h-4 w-4 h-4 text-[hsl(var(--primary))]" />
+                <span className="leading-tight">
+                  {details[currentDetailIndex]}
+                </span>
+              </span>
             </motion.div>
           </AnimatePresence>
         </div>
@@ -188,20 +194,30 @@ function Card({
       {details.length > 0 && (
         <button
           onClick={() => setShowDetails(!showDetails)}
-          className="text-sm font-semibold text-[hsl(var(--primary))] underline mb-2 cursor-pointer"
+          className="flex items-center gap-1 text-sm font-semibold text-[hsl(var(--primary))] mb-4 hover:opacity-80 cursor-pointer transition-all duration-900"
         >
-          {showDetails ? "Masquer les détails" : "Afficher les détails"}
+          {showDetails ? (
+            <>
+              <ChevronUp className="w-4 h-4" />
+              Masquer les détails
+            </>
+          ) : (
+            <>
+              <ChevronDown className="w-4 h-4" />
+              Afficher les détails
+            </>
+          )}
         </button>
       )}
 
       <AnimatePresence initial={false}>
         {showDetails && (
           <motion.div
-            className="w-full grid grid-cols-1 gap-2 mb-3"
+            className="w-full grid grid-cols-1 gap-2 mb-3 origin-top"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.6 }}
           >
             {details.map((item, index) => (
               <motion.div

@@ -102,7 +102,15 @@ export default function Navbar() {
           >
             <div ref={menuRef} className="flex flex-col gap-2 mt-2">
               {links.map((link) => (
-                <Link key={link.name} to={link.href} className="nav-button">
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  className={`nav-button text-base ${
+                    location.pathname === link.href
+                      ? "bg-[hsl(var(--primary))] text-white"
+                      : ""
+                  }`}
+                >
                   {link.name}
                 </Link>
               ))}
