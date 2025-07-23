@@ -112,7 +112,7 @@ const products = [
 
 export default function ProductSection() {
   return (
-    <section className="max-w-3xl mx-auto px-4 mt-40 mb-20">
+    <section className="max-w-3xl mx-auto px-4 mt-30 mb-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {products.map((product, index) => (
           <Card
@@ -154,7 +154,7 @@ function Card({
   }, [showDetails, details.length]);
 
   return (
-    <div className="flex flex-col items-center bg-[color:var(--card-bg)] rounded-2xl shadow-lg p-6 transition hover:shadow-xl">
+    <div className="flex flex-col items-center rounded-2xl shadow-even p-6 transition hover:scale-105 bg-[hsl(var(--card-bg))]">
       <img
         src={image}
         alt="Produit"

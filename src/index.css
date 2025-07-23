@@ -6,6 +6,9 @@
     @apply px-3 py-1.5 text-sm font-medium rounded-md transition-all duration-300;
     @apply bg-transparent text-[hsl(var(--nav-text))] hover:bg-[hsl(var(--primary))] hover:text-white;
   }
+  .shadow-even {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  }
 }
 
 /* === VARIABILE CSS PENTRU LIGHT / DARK === */
