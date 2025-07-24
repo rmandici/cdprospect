@@ -1,6 +1,7 @@
 import { Phone, Mail } from "lucide-react";
 import Player from "lottie-react";
 import creditCardAnimation from "@/assets/credit-card.json";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -48,14 +49,16 @@ export default function Footer() {
         </div>
 
         {/* Dreapta: animație minimalistă de plată */}
-        <div className="flex flex-col items-center gap-2">
-          <Player
-            autoplay
-            loop
-            animationData={creditCardAnimation} // <-- CORECT!
-            style={{ width: 150, height: 150 }}
-          />
-        </div>
+        <Link key="Acheter" to="/Acheter">
+          <div className="flex flex-col items-center gap-2">
+            <Player
+              autoplay
+              loop
+              animationData={creditCardAnimation} // <-- CORECT!
+              style={{ width: 150, height: 150 }}
+            />
+          </div>
+        </Link>
       </div>
     </footer>
   );

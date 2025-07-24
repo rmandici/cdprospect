@@ -34,6 +34,17 @@
     --card-bg: 220 13% 15%;
   }
 
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--navbar));
+  }
+
   html {
     @apply scroll-smooth;
   }

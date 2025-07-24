@@ -62,7 +62,7 @@ export default function BodySection() {
               </div>
 
               <Link
-                to="/produits"
+                to="/Produits"
                 className="mt-4 flex items-center gap-2 bg-[hsl(357,68%,37%)] text-white 
                           font-bold rounded-lg px-6 py-2 hover:bg-[hsl(357,68%,45%)] transition"
               >

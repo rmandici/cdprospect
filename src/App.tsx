@@ -71,7 +71,7 @@ function AnimatedRoutes() {
         />
 
         <Route
-          path="/Juridique"
+          path="/juridique"
           element={
             <PageWrapper>
               <Juridique />

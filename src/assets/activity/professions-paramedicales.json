@@ -1,0 +1,149 @@
+[
+  {
+    "label": "AUDIOPROTHESISTE",
+    "total": 7551,
+    "fax": 612,
+    "email": 1364,
+    "emailPlus": 3412
+  },
+  {
+    "label": "CENTRE DE PREVENTION ET DE SOINS EN ADDICTOLOGIE",
+    "total": 342,
+    "fax": 50,
+    "email": 107,
+    "emailPlus": 265
+  },
+  {
+    "label": "DIETETICIEN",
+    "total": 5836,
+    "fax": 29,
+    "email": 1143,
+    "emailPlus": 2850
+  },
+  {
+    "label": "ERGOTHERAPEUTE",
+    "total": 2276,
+    "fax": 5,
+    "email": 357,
+    "emailPlus": 901
+  },
+  {
+    "label": "FABRICATION D'INSTRUMENTS D'OPTIQUE",
+    "total": 278,
+    "fax": 50,
+    "email": 58,
+    "emailPlus": 142
+  },
+  {
+    "label": "FABRICATION DE LUNETTERIE",
+    "total": 272,
+    "fax": 39,
+    "email": 55,
+    "emailPlus": 135
+  },
+  {
+    "label": "FABRICATION DE MATERIEL MEDICO-CHIRURGICAL",
+    "total": 1680,
+    "fax": 249,
+    "email": 241,
+    "emailPlus": 602
+  },
+  {
+    "label": "INFIRMIER (CABINET, SOINS A DOMICILE)",
+    "total": 115340,
+    "fax": 779,
+    "email": 3770,
+    "emailPlus": 9429
+  },
+  {
+    "label": "MASSEUR KINESITHERAPEUTE",
+    "total": 87891,
+    "fax": 1199,
+    "email": 7241,
+    "emailPlus": 18113
+  },
+  {
+    "label": "MATERIEL DE KINESITHERAPIE",
+    "total": 2,
+    "fax": 1,
+    "email": 0,
+    "emailPlus": 2
+  },
+  {
+    "label": "OPTICIENS",
+    "total": 15590,
+    "fax": 3128,
+    "email": 3101,
+    "emailPlus": 7756
+  },
+  {
+    "label": "ORTHOPHONISTE",
+    "total": 21082,
+    "fax": 344,
+    "email": 985,
+    "emailPlus": 2460
+  },
+  {
+    "label": "ORTHOPTISTE",
+    "total": 3246,
+    "fax": 85,
+    "email": 242,
+    "emailPlus": 604
+  },
+  {
+    "label": "PEDICURE-PODOLOGUE",
+    "total": 16623,
+    "fax": 164,
+    "email": 773,
+    "emailPlus": 1939
+  },
+  {
+    "label": "PODO-ORTHESISTE",
+    "total": 394,
+    "fax": 43,
+    "email": 91,
+    "emailPlus": 229
+  },
+  {
+    "label": "PROTHESISTES DENTAIRES",
+    "total": 2309,
+    "fax": 127,
+    "email": 193,
+    "emailPlus": 468
+  },
+  {
+    "label": "PSYCHANALYSTE",
+    "total": 5059,
+    "fax": 38,
+    "email": 790,
+    "emailPlus": 1967
+  },
+  {
+    "label": "PSYCHOLOGUE",
+    "total": 26719,
+    "fax": 106,
+    "email": 3622,
+    "emailPlus": 9067
+  },
+  {
+    "label": "PSYCHOMOTRICIEN",
+    "total": 4216,
+    "fax": 9,
+    "email": 491,
+    "emailPlus": 1220
+  },
+  {
+    "label": "PSYCHOTHERAPEUTE",
+    "total": 4164,
+    "fax": 26,
+    "email": 659,
+    "emailPlus": 1650
+  },
+  {
+    "label": "VETERINAIRES",
+    "total": 8074,
+    "fax": 1003,
+    "email": 1718,
+    "emailPlus": 4295
+  }
+]

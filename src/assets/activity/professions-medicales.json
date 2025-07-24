@@ -1,0 +1,527 @@
+[
+  {
+    "label": "ADDICTOLOGUE",
+    "total": 89,
+    "fax": 21,
+    "email": 25,
+    "emailPlus": 64
+  },
+  {
+    "label": "ALLERGOLOGUE",
+    "total": 330,
+    "fax": 23,
+    "email": 23,
+    "emailPlus": 58
+  },
+  {
+    "label": "ANATOMO-CYTO-PATHOLOGISTE",
+    "total": 1154,
+    "fax": 131,
+    "email": 358,
+    "emailPlus": 890
+  },
+  {
+    "label": "ANESTHESISTE, REANIMATEUR",
+    "total": 3876,
+    "fax": 434,
+    "email": 812,
+    "emailPlus": 2024
+  },
+  {
+    "label": "ANGIOLOGUE, MEDECIN VASCULAIRE",
+    "total": 1893,
+    "fax": 292,
+    "email": 226,
+    "emailPlus": 570
+  },
+  {
+    "label": "CANCEROLOGUE",
+    "total": 406,
+    "fax": 45,
+    "email": 96,
+    "emailPlus": 245
+  },
+  {
+    "label": "CARDIOLOGUE, MALADIES VASCULAIRES",
+    "total": 6999,
+    "fax": 1127,
+    "email": 1187,
+    "emailPlus": 2972
+  },
+  {
+    "label": "CHIRURGIEN CARDIO-VASCULAIRE ET THORACIQUE",
+    "total": 425,
+    "fax": 31,
+    "email": 92,
+    "emailPlus": 229
+  },
+  {
+    "label": "CHIRURGIEN DE LA FACE ET DU COU",
+    "total": 90,
+    "fax": 18,
+    "email": 18,
+    "emailPlus": 40
+  },
+  {
+    "label": "CHIRURGIEN DE LA MAIN",
+    "total": 106,
+    "fax": 21,
+    "email": 30,
+    "emailPlus": 78
+  },
+  {
+    "label": "CHIRURGIEN GENERALISTE",
+    "total": 1420,
+    "fax": 182,
+    "email": 306,
+    "emailPlus": 770
+  },
+  {
+    "label": "CHIRURGIEN MAXILLO-FACIAL, STOMATOLOGUE",
+    "total": 721,
+    "fax": 76,
+    "email": 142,
+    "emailPlus": 357
+  },
+  {
+    "label": "CHIRURGIEN ORL ET CERVICO-FACIAL",
+    "total": 1242,
+    "fax": 23,
+    "email": 257,
+    "emailPlus": 644
+  },
+  {
+    "label": "CHIRURGIEN ORTHOPEDISTE ET TRAUMATOLOGUE",
+    "total": 4160,
+    "fax": 650,
+    "email": 1000,
+    "emailPlus": 2492
+  },
+  {
+    "label": "CHIRURGIEN PLASTICIEN",
+    "total": 1706,
+    "fax": 281,
+    "email": 401,
+    "emailPlus": 1005
+  },
+  {
+    "label": "CHIRURGIEN UROLOGUE",
+    "total": 2051,
+    "fax": 219,
+    "email": 464,
+    "emailPlus": 1170
+  },
+  {
+    "label": "CHIRURGIEN VASCULAIRE",
+    "total": 682,
+    "fax": 90,
+    "email": 150,
+    "emailPlus": 378
+  },
+  {
+    "label": "CHIRURGIEN VISCERAL ET DIGESTIF",
+    "total": 1001,
+    "fax": 107,
+    "email": 214,
+    "emailPlus": 544
+  },
+  {
+    "label": "CHIRURGIEN-DENTISTE",
+    "total": 34640,
+    "fax": 2164,
+    "email": 2544,
+    "emailPlus": 6359
+  },
+  {
+    "label": "CHIRURGIEN-DENTISTE : CHIRURGIE ORALE",
+    "total": 401,
+    "fax": 20,
+    "email": 44,
+    "emailPlus": 110
+  },
+  {
+    "label": "CHIRURGIEN-DENTISTE, ORTHODONTISTE",
+    "total": 2677,
+    "fax": 257,
+    "email": 381,
+    "emailPlus": 952
+  },
+  {
+    "label": "DERMATOLOGUE",
+    "total": 2521,
+    "fax": 323,
+    "email": 208,
+    "emailPlus": 511
+  },
+  {
+    "label": "DIABETOLOGUE-NUTRITIONNISTE",
+    "total": 64,
+    "fax": 7,
+    "email": 9,
+    "emailPlus": 18
+  },
+  {
+    "label": "ENDOCRINOLOGUE, DIABETOLOGUE, MALADIES METABOLIQUES",
+    "total": 953,
+    "fax": 105,
+    "email": 105,
+    "emailPlus": 267
+  },
+  {
+    "label": "GASTRO-ENTEROLOGUE, HEPATOLOGUE",
+    "total": 3192,
+    "fax": 582,
+    "email": 592,
+    "emailPlus": 1474
+  },
+  {
+    "label": "GENETIQUE MEDICALE",
+    "total": 93,
+    "fax": 3,
+    "email": 11,
+    "emailPlus": 29
+  },
+  {
+    "label": "GERIATRE, GERONTOLOGUE",
+    "total": 278,
+    "fax": 24,
+    "email": 58,
+    "emailPlus": 143
+  },
+  {
+    "label": "GYNECOLOGUE MEDICAL",
+    "total": 1018,
+    "fax": 143,
+    "email": 83,
+    "emailPlus": 203
+  },
+  {
+    "label": "GYNECOLOGUE, OBSTETRICIEN",
+    "total": 4360,
+    "fax": 621,
+    "email": 767,
+    "emailPlus": 1896
+  },
+  {
+    "label": "HEMATOLOGUE",
+    "total": 93,
+    "fax": 2,
+    "email": 22,
+    "emailPlus": 59
+  },
+  {
+    "label": "HOMEOPATHE",
+    "total": 1126,
+    "fax": 111,
+    "email": 72,
+    "emailPlus": 174
+  },
+  {
+    "label": "HOPITAL PSYCHIATRIQUE",
+    "total": 429,
+    "fax": 72,
+    "email": 102,
+    "emailPlus": 256
+  },
+  {
+    "label": "LEGISTE",
+    "total": 124,
+    "fax": 25,
+    "email": 22,
+    "emailPlus": 56
+  },
+  {
+    "label": "MAISON DE RETRAITE MEDICALISEE",
+    "total": 1456,
+    "fax": 442,
+    "email": 402,
+    "emailPlus": 975
+  },
+  {
+    "label": "MAISON DE SANTE",
+    "total": 1103,
+    "fax": 78,
+    "email": 202,
+    "emailPlus": 506
+  },
+  {
+    "label": "MEDECIN BIOLOGISTE",
+    "total": 1329,
+    "fax": 617,
+    "email": 334,
+    "emailPlus": 832
+  },
+  {
+    "label": "MEDECIN DU SOMMEIL",
+    "total": 78,
+    "fax": 2,
+    "email": 4,
+    "emailPlus": 16
+  },
+  {
+    "label": "MEDECIN DU SPORT",
+    "total": 770,
+    "fax": 101,
+    "email": 100,
+    "emailPlus": 252
+  },
+  {
+    "label": "MEDECIN ECHOGRAPHISTE",
+    "total": 282,
+    "fax": 46,
+    "email": 33,
+    "emailPlus": 81
+  },
+  {
+    "label": "MEDECIN GENERALISTE",
+    "total": 55215,
+    "fax": 5337,
+    "email": 5218,
+    "emailPlus": 13026
+  },
+  {
+    "label": "MEDECIN NUTRITIONNISTE",
+    "total": 335,
+    "fax": 20,
+    "email": 36,
+    "emailPlus": 100
+  },
+  {
+    "label": "MEDECIN PHYSIQUE : READAPTATEUR",
+    "total": 466,
+    "fax": 51,
+    "email": 70,
+    "emailPlus": 182
+  },
+  {
+    "label": "MEDECIN REANIMATEUR",
+    "total": 0,
+    "fax": 0,
+    "email": 0,
+    "emailPlus": 0
+  },
+  {
+    "label": "MEDECIN SEXOLOGUE",
+    "total": 117,
+    "fax": 5,
+    "email": 14,
+    "emailPlus": 35
+  },
+  {
+    "label": "MEDECINE DU TRAVAIL",
+    "total": 1456,
+    "fax": 513,
+    "email": 237,
+    "emailPlus": 592
+  },
+  {
+    "label": "MEDECINE INTERNE",
+    "total": 274,
+    "fax": 20,
+    "email": 39,
+    "emailPlus": 98
+  },
+  {
+    "label": "MEDECINE MANUELLE, OSTEOPATHE",
+    "total": 751,
+    "fax": 44,
+    "email": 67,
+    "emailPlus": 185
+  },
+  {
+    "label": "MEDECINE NUCLEAIRE",
+    "total": 764,
+    "fax": 89,
+    "email": 200,
+    "emailPlus": 495
+  },
+  {
+    "label": "MEDECINE TROPICALE ET PATHOLOGIES INFECTIEUSES",
+    "total": 54,
+    "fax": 4,
+    "email": 12,
+    "emailPlus": 34
+  },
+  {
+    "label": "MEDECINS ACUPUNCTEURS",
+    "total": 959,
+    "fax": 80,
+    "email": 77,
+    "emailPlus": 194
+  },
+  {
+    "label": "MEDECINS THERMALISTES",
+    "total": 107,
+    "fax": 14,
+    "email": 18,
+    "emailPlus": 40
+  },
+  {
+    "label": "MESOTHERAPEUTE",
+    "total": 196,
+    "fax": 18,
+    "email": 16,
+    "emailPlus": 54
+  },
+  {
+    "label": "NEPHROLOGUE",
+    "total": 894,
+    "fax": 139,
+    "email": 170,
+    "emailPlus": 425
+  },
+  {
+    "label": "NEUROCHIRURGIEN",
+    "total": 378,
+    "fax": 38,
+    "email": 90,
+    "emailPlus": 224
+  },
+  {
+    "label": "NEUROLOGUE",
+    "total": 1171,
+    "fax": 163,
+    "email": 147,
+    "emailPlus": 373
+  },
+  {
+    "label": "NEUROPSYCHIATRE",
+    "total": 90,
+    "fax": 8,
+    "email": 11,
+    "emailPlus": 28
+  },
+  {
+    "label": "ONCOLOGUE",
+    "total": 176,
+    "fax": 36,
+    "email": 42,
+    "emailPlus": 111
+  },
+  {
+    "label": "ONCOLOGUE, RADIOTHERAPEUTE",
+    "total": 962,
+    "fax": 130,
+    "email": 234,
+    "emailPlus": 591
+  },
+  {
+    "label": "OPHTALMOLOGUE",
+    "total": 7036,
+    "fax": 960,
+    "email": 1495,
+    "emailPlus": 3723
+  },
+  {
+    "label": "ORL",
+    "total": 1504,
+    "fax": 203,
+    "email": 186,
+    "emailPlus": 487
+  },
+  {
+    "label": "ORTHOPEDISTE DENTO-MAXILLO-FACIAL",
+    "total": 99,
+    "fax": 13,
+    "email": 12,
+    "emailPlus": 31
+  },
+  {
+    "label": "PEDIATRE",
+    "total": 2673,
+    "fax": 259,
+    "email": 306,
+    "emailPlus": 762
+  },
+  {
+    "label": "PNEUMOLOGUE",
+    "total": 1614,
+    "fax": 222,
+    "email": 249,
+    "emailPlus": 619
+  },
+  {
+    "label": "PSYCHIATRE",
+    "total": 5587,
+    "fax": 514,
+    "email": 528,
+    "emailPlus": 1317
+  },
+  {
+    "label": "PSYCHIATRE ENFANTS ET ADOLESCENTS",
+    "total": 443,
+    "fax": 33,
+    "email": 54,
+    "emailPlus": 142
+  },
+  {
+    "label": "PSYCHOTHERAPIE (PRATIQUES HORS DU CADRE REGLEMENTE)",
+    "total": 10648,
+    "fax": 45,
+    "email": 2256,
+    "emailPlus": 5593
+  },
+  {
+    "label": "RADIOLOGUE",
+    "total": 3872,
+    "fax": 1067,
+    "email": 684,
+    "emailPlus": 1706
+  },
+  {
+    "label": "REPRODUCTION ET GYNECOLOGUE MEDICAL",
+    "total": 138,
+    "fax": 19,
+    "email": 20,
+    "emailPlus": 46
+  },
+  {
+    "label": "RHUMATOLOGUE",
+    "total": 1563,
+    "fax": 234,
+    "email": 164,
+    "emailPlus": 413
+  },
+  {
+    "label": "SAGE-FEMME",
+    "total": 8159,
+    "fax": 145,
+    "email": 908,
+    "emailPlus": 2266
+  },
+  {
+    "label": "SAGE-FEMME ECHOGRAPHISTE",
+    "total": 167,
+    "fax": 12,
+    "email": 22,
+    "emailPlus": 49
+  },
+  {
+    "label": "SANTE PUBLIQUE ET MEDECINE SOCIALE",
+    "total": 2158,
+    "fax": 966,
+    "email": 463,
+    "emailPlus": 1146
+  },
+  {
+    "label": "SOIN PALLIATIF",
+    "total": 35,
+    "fax": 7,
+    "email": 7,
+    "emailPlus": 18
+  },
+  {
+    "label": "STOMATOLOGUE",
+    "total": 461,
+    "fax": 66,
+    "email": 55,
+    "emailPlus": 134
+  },
+  {
+    "label": "TABACOLOGUE",
+    "total": 67,
+    "fax": 7,
+    "email": 10,
+    "emailPlus": 27
+  }
+]
