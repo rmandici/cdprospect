@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import activityCategories from "@/lib/activityCategories";
 import medicalData from "@/assets/activity/professions-medicales.json";
 import paramedicalData from "@/assets/activity/professions-paramedicales.json";
-import { ChevronDown, Mail, Send, MailPlus } from "lucide-react";
+import { ChevronDown, Mail, Send, MailPlus, Download } from "lucide-react";
 import { Listbox } from "@headlessui/react";
 
 type Profession = {
@@ -144,6 +144,21 @@ export default function ActivitySection() {
             Aucune profession trouvée.
           </p>
         )}
+      </div>
+
+      <div className="mt-10 border-t border-[hsl(var(--navbar))] pt-6 text-center mb-15">
+        <p className="mb-4 text-sm text-[hsl(var(--foreground))]">
+          Télécharger la liste complète des activités avec le comptage des
+          entreprises, fax et E-mail :
+        </p>
+        <a
+          href="/activites.xls"
+          download
+          className="inline-flex items-center bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] px-4 py-2 rounded-md text-sm font-medium transition hover:bg-[hsl(var(--link-hover))]"
+        >
+          <Download className="w-4 h-4" />
+          Télécharger
+        </a>
       </div>
     </section>
   );
