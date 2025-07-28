@@ -17,6 +17,16 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const menuRef = useRef<HTMLDivElement>(null);
+  const isActive = (href: string) => {
+    const current = location.pathname.toLowerCase();
+    const target = href.toLowerCase();
+
+    if (target === "/") {
+      return current === "/";
+    }
+
+    return current.startsWith(target);
+  };
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -79,9 +89,7 @@ export default function Navbar() {
               key={link.name}
               to={link.href}
               className={`nav-button text-base ${
-                location.pathname === link.href
-                  ? "bg-[hsl(var(--primary))] text-white"
-                  : ""
+                isActive(link.href) ? "bg-[hsl(var(--primary))] text-white" : ""
               }`}
             >
               {link.name}
@@ -106,7 +114,7 @@ export default function Navbar() {
                   key={link.name}
                   to={link.href}
                   className={`nav-button text-base ${
-                    location.pathname === link.href
+                    isActive(link.href)
                       ? "bg-[hsl(var(--primary))] text-white"
                       : ""
                   }`}

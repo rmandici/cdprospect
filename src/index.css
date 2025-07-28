@@ -9,6 +9,35 @@
   .shadow-even {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   }
+  .input {
+    @apply w-full px-3 py-2 rounded-md border border-[hsl(var(--navbar))] bg-[hsl(var(--card-bg))] text-sm text-[hsl(var(--foreground))];
+    @apply transition-all duration-300 ease-in-out;
+
+    &:focus {
+      @apply outline-none scale-[1.03] shadow-md;
+      box-shadow: 0 0 0 4px hsl(var(--primary) / 0.15);
+    }
+  }
+  .text-muted {
+    color: hsl(var(--muted));
+  }
+}
+
+/* index.css */
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out forwards;
 }
 
 /* === VARIABILE CSS PENTRU LIGHT / DARK === */
@@ -22,6 +51,7 @@
     --primary: 14 80% 35%; /* roșu burgundy */
     --primary-foreground: 0 0% 100%; /* alb */
     --card-bg: 0 0% 100%;
+    --muted: 220 10% 46%; /* gri închis pt light mode */
   }
   .dark {
     --background: 220 13% 11%; /* aproape negru */
@@ -32,21 +62,25 @@
     --primary: 14 80% 35%;
     --primary-foreground: 0 0% 100%;
     --card-bg: 220 13% 15%;
+    --muted: 0 0% 70%; /* gri deschis pt dark mode */
   }
 
   ::-webkit-scrollbar {
-    width: 6px;
+    width: 14px;
   }
   ::-webkit-scrollbar-thumb {
     background: hsl(var(--primary));
-    border-radius: 4px;
+    border-radius: 6px;
+    border: 3px solid hsl(var(--navbar)); /* separa vizual thumb-ul de conținut */
   }
   ::-webkit-scrollbar-track {
-    background: hsl(var(--navbar));
+    background: hsl(var(--navbar) / 0.5);
+    backdrop-filter: blur(4px);
   }
 
   html {
     @apply scroll-smooth;
+    scrollbar-gutter: stable;
   }
 
   body {

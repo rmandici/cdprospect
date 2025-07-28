@@ -132,9 +132,9 @@ export default function BodySection() {
         </p>
 
         {/* Highlights */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="flex items-center bg-[hsl(var(--navbar))] rounded-xl p-4 shadow-lg gap-4">
-            <span className="text-3xl min-w-40 font-extrabold text-[hsl(var(--primary))]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 rounded-lg">
+          <div className="flex items-center bg-[hsl(var(--navbar))] rounded-xl p-4 gap-4 shadow-lg">
+            <span className="text-3xl min-w-40 font-extrabold text-[hsl(var(--primary))] ">
               3 000 000
             </span>
             <div>
@@ -153,7 +153,7 @@ export default function BodySection() {
             </div>
           </div>
           <div className="flex items-center bg-[hsl(var(--navbar))] rounded-xl p-4 shadow-lg gap-4">
-            <span className="text-3xl font-extrabold text-[hsl(var(--primary))]">
+            <span className="text-3xl min-w-40 font-extrabold text-[hsl(var(--primary))]">
               250 000
             </span>
             <div>

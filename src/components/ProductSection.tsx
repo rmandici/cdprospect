@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ChevronDown, ChevronUp } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const products = [
   {
+    id: "cd-prospect",
     title: (
       <span>
         CD‑PROSPECT –{" "}
@@ -24,6 +26,7 @@ const products = [
     ],
   },
   {
+    id: "cd-prospect-sub",
     title: (
       <span className="flex flex-col">
         Abonnement 1 an (3 éditions) – <br />
@@ -38,6 +41,7 @@ const products = [
     details: [],
   },
   {
+    id: "cd-prospect-email",
     title: (
       <span>
         CD‑PROSPECT EMAIL –{" "}
@@ -59,6 +63,7 @@ const products = [
     ],
   },
   {
+    id: "cd-prospect-email-sub",
     title: (
       <span className="flex flex-col text-center max-w-55">
         Abonnement Email 1 an (3 éditions) –{" "}
@@ -72,6 +77,7 @@ const products = [
     details: [],
   },
   {
+    id: "cd-prospect-email-plus",
     title: (
       <span className="flex flex-col text-center max-w-55">
         CD‑PROSPECT EMAIL‑PLUS –{" "}
@@ -95,6 +101,7 @@ const products = [
     ],
   },
   {
+    id: "cd-prospect-email-plus-sub",
     title: (
       <span className="flex flex-col text-center max-w-55">
         ABONNEMENT EMAIL‑PLUS 1 AN – 3 ÉDITIONS –{" "}
@@ -117,6 +124,7 @@ export default function ProductSection() {
         {products.map((product, index) => (
           <Card
             key={index}
+            id={product.id}
             title={product.title}
             image={product.image}
             short={product.short}
@@ -129,11 +137,13 @@ export default function ProductSection() {
 }
 
 function Card({
+  id,
   title,
   image,
   short,
   details,
 }: {
+  id: string;
   title: React.ReactNode;
   image: string;
   short: string;
@@ -235,7 +245,10 @@ function Card({
         )}
       </AnimatePresence>
 
-      <button className="mt-auto mx-auto flex items-center gap-2 cursor-pointer bg-[hsl(357,68%,37%)] text-white font-bold rounded-lg px-5 py-1.5 hover:bg-[hsl(357,68%,45%)] transition text-sm">
+      <Link
+        to={`/acheter?product=${id}`}
+        className="mt-auto mx-auto flex items-center gap-2 cursor-pointer bg-[hsl(357,68%,37%)] text-white font-bold rounded-lg px-5 py-1.5 hover:bg-[hsl(357,68%,45%)] transition text-sm"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-4 w-4"
@@ -251,7 +264,7 @@ function Card({
           />
         </svg>
         Acheter maintenant
-      </button>
+      </Link>
     </div>
   );
 }

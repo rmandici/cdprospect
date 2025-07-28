@@ -4,6 +4,7 @@ import medicalData from "@/assets/activity/professions-medicales.json";
 import paramedicalData from "@/assets/activity/professions-paramedicales.json";
 import { ChevronDown, Mail, Send, MailPlus, Download } from "lucide-react";
 import { Listbox } from "@headlessui/react";
+import { motion, AnimatePresence } from "framer-motion";
 
 type Profession = {
   label: string;
@@ -57,25 +58,45 @@ export default function ActivitySection() {
           </label>
           <div className="relative w-full sm:w-80">
             <Listbox value={selectedCategory} onChange={setSelectedCategory}>
-              <Listbox.Button className="w-full px-3 py-2 bg-[hsl(var(--navbar))] text-[hsl(var(--foreground))] rounded-md flex justify-between items-center text-sm">
-                {selectedCategory}
-                <ChevronDown className="w-4 h-4 ml-2" />
-              </Listbox.Button>
-              <Listbox.Options className="absolute z-10 mt-1 max-h-60 w-full overflow-y-auto bg-[hsl(var(--card-bg))] text-sm rounded-md shadow-even border border-[hsl(var(--navbar))]">
-                {activityCategories.map((category) => (
-                  <Listbox.Option
-                    key={category}
-                    value={category}
-                    className={({ active }) =>
-                      `px-3 py-2 cursor-pointer ${
-                        active ? "bg-[hsl(var(--primary)/0.1)]" : ""
-                      }`
-                    }
-                  >
-                    {category}
-                  </Listbox.Option>
-                ))}
-              </Listbox.Options>
+              {({ open }) => (
+                <>
+                  <Listbox.Button className="w-full px-3 py-2 bg-[hsl(var(--navbar))] text-[hsl(var(--foreground))] rounded-md flex justify-between items-center text-sm cursor-pointer">
+                    {selectedCategory}
+                    <ChevronDown className="w-4 h-4 ml-2" />
+                  </Listbox.Button>
+
+                  <AnimatePresence>
+                    {open && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -8 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute z-10 mt-1 w-full"
+                      >
+                        <Listbox.Options
+                          static
+                          className="max-h-60 w-full overflow-y-auto bg-[hsl(var(--card-bg))] text-sm rounded-md shadow-even border border-[hsl(var(--navbar))]"
+                        >
+                          {activityCategories.map((category) => (
+                            <Listbox.Option
+                              key={category}
+                              value={category}
+                              className={({ active }) =>
+                                `px-3 py-2 cursor-pointer ${
+                                  active ? "bg-[hsl(var(--primary)/0.1)]" : ""
+                                }`
+                              }
+                            >
+                              {category}
+                            </Listbox.Option>
+                          ))}
+                        </Listbox.Options>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </>
+              )}
             </Listbox>
           </div>
         </div>
