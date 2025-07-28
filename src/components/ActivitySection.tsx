@@ -54,7 +54,7 @@ export default function ActivitySection() {
         {/* Dropdown custom */}
         <div className="w-full sm:w-auto">
           <label className="block  mb-1 ml-1 text-sm font-medium">
-            Activité : Les Thèmes généraux
+            Activité: Les Thèmes généraux
           </label>
           <div className="relative w-full sm:w-80">
             <Listbox value={selectedCategory} onChange={setSelectedCategory}>
@@ -104,7 +104,7 @@ export default function ActivitySection() {
         {/* Căutare */}
         <div className="w-full sm:w-auto flex-1">
           <label className="block mb-1 text-sm font-medium">
-            Filtrează după cuvânt cheie:
+            Recherche par mot-clé:
           </label>
           <input
             type="text"
@@ -170,7 +170,7 @@ export default function ActivitySection() {
       <div className="mt-10 border-t border-[hsl(var(--navbar))] pt-6 text-center mb-15">
         <p className="mb-4 text-sm text-[hsl(var(--foreground))]">
           Télécharger la liste complète des activités avec le comptage des
-          entreprises, fax et E-mail :
+          entreprises, fax et E-mail:
         </p>
         <a
           href="/activites.xls"
